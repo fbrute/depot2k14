@@ -8,5 +8,6 @@ class StoreControllerTest < ActionController::TestCase
     assert_select '#main .entry', 3
     assert_select 'h3', 'Programming Ruby 1.9' 
     assert_select '.price',/[\d]+\,\d\d\s+€/ 
+    assert_select '#columns #side .date', /\d+-\d+-\d+\s\d+:\d+:\d+/
   end
 end
